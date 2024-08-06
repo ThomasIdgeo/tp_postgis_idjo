@@ -24,6 +24,7 @@ order by 1
 */
 
 --créer une vue des communes qui accueillent un site de compétition et compter le nombre de site par commune classé dans l'ordre décroissant.
+
 /*
 create view v_nb_site_commune as
 SELECT distinct t1.id,t1.nom, count(t2.id) as "Nb de site",t1.geom
