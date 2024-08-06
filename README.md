@@ -32,4 +32,4 @@ Après vous être assuré que vos données soient bien importées (en sql évide
 
 ### Un logo de circonstance
 
-![jp.jpg](jp.jpg)
+![idJO_bobo.png](img/idJO_bobo.png)
