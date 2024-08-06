@@ -29,3 +29,7 @@ Après vous être assuré que vos données soient bien importées (en sql évide
 - créer une vue matérialisée qui permet de connaître la distance en km de chaque site à Null Island.
 - créer une vue des communes qui accueillent un site de compétition et compter le nombre de site par commune classé dans l'ordre décroissant.
 - créer une vue matérialisée qui permet de calculer la distance du site le plus proche avec une requête imbriquée.
+
+### Un logo de circonstance
+
+![jp.jpg](jp.jpg)
