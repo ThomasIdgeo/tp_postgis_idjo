@@ -2,7 +2,7 @@
 
 > abandon de la dernière requête trop tordue ...
 
---trouver le nombre de sites de compétitions situés à plus de 5 km de la tour Eiffel.
+### Trouver le nombre de sites de compétitions situés à plus de 5 km de la tour Eiffel.
 
 /*
 SELECT count(*)
@@ -10,10 +10,10 @@ FROM site_compet
 WHERE ST_Distance(
 	geom::geography,
 	ST_SetSRID(ST_Makepoint(2.294438,48.858265),4326)::geography
-)>10000;
+)>5000;
 */
 
---créer une vue matérialisée qui permet de connaître la distance en km de chaque site à Null Island.
+### Créer une vue matérialisée qui permet de connaître la distance en km de chaque site à Null Island.
 
 /*
 CREATE MATERIALIZED VIEW vm_distance_site_null_island AS
@@ -23,7 +23,7 @@ FROM public.site_compet as sc
 order by 1
 */
 
---créer une vue des communes qui accueillent un site de compétition et compter le nombre de site par commune classé dans l'ordre décroissant.
+### Créer une vue des communes qui accueillent un site de compétition et compter le nombre de site par commune classé dans l'ordre décroissant.
 
 /*
 create view v_nb_site_commune as
